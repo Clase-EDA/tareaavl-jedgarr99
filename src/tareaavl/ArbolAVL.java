@@ -223,6 +223,7 @@ public class ArbolAVL<T extends Comparable<T>> implements ArbolAVLADT<T> {
             alfa.setDer(null);
             alfa.setIzq(null);
             alfa.cuelga(B);
+            alfa.cuelga(A);
             beta.cuelga(alfa);
             if (papa != null) {
                 papa.cuelga(beta);
